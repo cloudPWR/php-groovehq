@@ -50,12 +50,24 @@ class TicketsDescription extends BasicServiceDescription
                             'type' => ['string', 'object'],
                             'location' => 'postField',
                         ],
+                        'sent_at' => [
+                            'description' => 'Can be used to set the created and updated datetimes to sometime in the past. RFC-822 format preferred',
+                            'type' => 'string',
+                            'required' => false,
+                            'location' => 'postField',
+                        ],
                         'state' => [
                             'description' => 'The ticket state. Allowed states are: "unread", "opened", "follow_up", "pending", "closed", "spam"',
                             'type' => 'string',
                             'required' => false,
                             'location' => 'postField',
                             'default' => 'unread',
+                        ],
+                        'subject' => [
+                            'description' => 'The email subject of your ticket',
+                            'type' => 'string',
+                            'required' => false,
+                            'location' => 'postField',
                         ],
                         'tags' => [
                             'description' => 'A list of tag names',
