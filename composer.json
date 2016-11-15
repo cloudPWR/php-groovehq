@@ -13,7 +13,7 @@
     ]
     , "require": {
         "cakephp/utility": "^3.2"
-        , "guzzlehttp/guzzle": "^5.3"
+        , "guzzlehttp/guzzle": "^6.2"
         , "guzzlehttp/guzzle-services": "^0.5"
         , "sabre/xml" : "^1.4"
     }
