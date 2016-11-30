@@ -59,7 +59,7 @@ class Client
         GuzzleHttpDescription $httpDescription,
         array $options = []
     ) {
-        return new GuzzleClient($httpClient, $httpDescription, $options);
+        return new GuzzleClient($httpClient, $httpDescription, null, null, null, $options);
     }
 
 }
