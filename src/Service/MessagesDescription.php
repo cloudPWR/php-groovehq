@@ -61,13 +61,13 @@ class MessagesDescription extends BasicServiceDescription
                         'body' => [
                             'description' => 'The message body',
                             'type' => 'string',
-                            'location' => 'postField',
+                            'location' => 'formParam',
                         ],
                         'note' => [
                             'description' => 'Is the message a private note?',
                             'type' => 'string',
                             'required' => false,
-                            'location' => 'postField',
+                            'location' => 'formParam',
                         ],
                     ]
                 ],
